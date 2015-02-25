@@ -1,5 +1,5 @@
 import unittest
-import simple_class2
+import Solrdata
 import datetime 
 import logging
 import os,time,sys
@@ -25,7 +25,7 @@ class SendStatusMail():
 	receivers = 'sampada@zettata.com'
 	
 	username = 'sampada@zettata.com'
-	password = '1qazettata@B14'
+	password = 'sampada@B14'
 	path = os.path.dirname(os.path.realpath('unit_test.log'))
 	unittest_log_path = path+'/'+'unit_test.log'
 	unittest_result_path = path+'/'+'testing_reports.out'
@@ -59,7 +59,7 @@ class SendStatusMail():
 
 class SimpleTests(unittest.TestCase):
 		
-	obj = simple_class2.qury_testing()
+	obj = Solrdata.qury_testing()
 	#obj.result_Value()
 	flag = True
 
